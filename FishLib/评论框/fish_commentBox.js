@@ -7,7 +7,6 @@
   console.log(1)
   inputTextarea.addEventListener('input', (e) => {
     let textMount = e.target.innerHTML.length
-
     textMountShow.innerHTML = `${textMount}/100`
   })
 })()

@@ -27,24 +27,21 @@
 .fish_commentBox .commentTopR {
   /* 盒子尺寸 */
   width: 400px;
-  height: 70px;
-  line-height: 70px;
+  /* height: 70px; */
   /* 盒子表现 */
   border: 1px solid black;
   box-sizing: border-box;
   margin-left: 10px;
   border-radius: 10px;
   /* 内部表现 */
-  text-align: center;
 }
 
 .fish_commentBox .commentInput {
   /* 盒子尺寸 */
   width: 380px;
-  height: 50px;
+  min-height: 50px;
   /* 盒子表现 */
-  display: inline-block;
-  margin-top: 10px;
+  margin: 10px auto;
   border: 0;
   resize: none;
   font-size: 16px;
@@ -56,8 +53,8 @@
   outline: 0;
 }
 
-/* 消除textarea获取焦点会强调(显现外边框)的效果 */
-.fish_commentBox .commentInput:focus {
+/* 消除commentTopR获取焦点会强调(显现外边框)的效果 */
+.fish_commentBox .commentTopR:focus {
   outline: 0;
 }
 
