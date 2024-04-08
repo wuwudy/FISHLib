@@ -1,0 +1,14 @@
+/* 鸿蒙OS字体CSS */
+
+@font-face {
+  font-family: 'HarmonyOS_Sans_Thin';
+  src: url('./HarmonyOS_Sans/HarmonyOS_Sans_Thin.ttf');
+}
+@font-face {
+  font-family: 'HarmonyOS_Sans_Regular';
+  src: url('./HarmonyOS_Sans/HarmonyOS_Sans_Regular.ttf');
+}
+@font-face {
+  font-family: 'HarmonyOS_Sans_Bold';
+  src: url('./HarmonyOS_Sans/HarmonyOS_Sans_Bold.ttf');
+}

@@ -1,0 +1,122 @@
+/* #region 评论框 */
+.fish_commentBox .commentTop {
+  /* background-color: skyblue; */
+}
+
+/* #region 上方区域 */
+
+/* 头像盒子 */
+.fish_commentBox .commentTopL {
+  /* 盒子尺寸 */
+  height: 60px;
+  width: 60px;
+  /* 盒子表现 */
+  margin-top: 5px;
+  border-radius: 30px;
+  border: 1px solid black;
+  background-repeat: none;
+  background-position: -10px;
+  background-size: cover;
+  background-image: url('https://steamcommunity-a.akamaihd.net/economy/image/IzMF03bi9WpSBq-S-ekoE33L-iLqGFHVaU25ZzQNQcXdB2ozio1RrlIWFK3UfvMYB8UsvjiMXojflsZalyxSh31CIyHz2GZ-KuFpPsrTzBG0qe6yD3n-ZDLdEC3YDlltU-cLND7c92Hxt-SVFGqfFe54SgACdfcFoDJPP82AOBtrhdZZ-Ga9zhwzDhgvNMZJfACpx2EfJbQ1xDhPJM5amiekAf1NktA');
+  /* background-color: red; */
+  /* 内部表现 */
+  overflow: hidden;
+}
+
+/* 评论输入框 */
+.fish_commentBox .commentTopR {
+  /* 盒子尺寸 */
+  width: 400px;
+  height: 70px;
+  line-height: 70px;
+  /* 盒子表现 */
+  border: 1px solid black;
+  box-sizing: border-box;
+  margin-left: 10px;
+  border-radius: 10px;
+  /* 内部表现 */
+  text-align: center;
+}
+
+.fish_commentBox .commentInput {
+  /* 盒子尺寸 */
+  width: 380px;
+  height: 50px;
+  /* 盒子表现 */
+  display: inline-block;
+  margin-top: 10px;
+  border: 0;
+  resize: none;
+  font-size: 16px;
+  font-family: 'HarmonyOS_Sans_Regular';
+  /* 内部表现 */
+  /* 初始有两行，由于基线原因，将行高调小2px使得文字视觉居中*/
+  line-height: 23px;
+  text-align: left;
+  outline: 0;
+}
+
+/* 消除textarea获取焦点会强调(显现外边框)的效果 */
+.fish_commentBox .commentInput:focus {
+  outline: 0;
+}
+
+/* #endregion 上方区域 */
+
+/* #region 下方区域 */
+.fish_commentBox .commentBottom {
+  width: 395px;
+  margin-top: 5px;
+  padding-left: 70px;
+}
+
+/* 表情图标 */
+.fish_commentBox .commentBottom .commentEmoji svg {
+  /* 盒子尺寸 */
+  height: 20px;
+  width: 20px;
+  /* 盒子表现 */
+  margin-left: 5px;
+  transition: 0.3s 0s linear transform;
+}
+
+/* 图片图标 */
+.fish_commentBox .commentBottom .commentPic svg {
+  /* 盒子尺寸 */
+  height: 20px;
+  width: 20px;
+  /* 盒子表现 */
+  margin-left: 10px;
+  transition: 0.3s 0s linear transform;
+}
+
+/* 字数统计 */
+.fish_commentBox .commentBottom .commentTextCal {
+  /* 盒子尺寸 */
+  height: 20px;
+  width: 30px;
+  /* 盒子表现 */
+  margin-right: 20px;
+  transition: 0.3s 0s linear transform;
+  /* 内部表现 */
+  font-size: 13px;
+}
+
+/* 发布按钮 */
+.fish_commentBox .commentBottom .commentPublishBtn svg {
+  /* 盒子尺寸 */
+  height: 20px;
+  width: 20px;
+  /* 盒子表现 */
+  transition: 0.3s 0s linear all;
+  /* 内部表现 */
+}
+
+.fish_commentBox .commentBottom .commentEmoji svg:hover,
+.fish_commentBox .commentBottom .commentPic svg:hover,
+.fish_commentBox .commentBottom .commentPublishBtn svg:hover {
+  transform: scale(1.2);
+}
+
+/* #endregion 下方区域 */
+/* #endregion 评论框 */

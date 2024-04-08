@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css" />
+    <!-- 鸿蒙字体 -->
+    <link rel="stylesheet" href="../sources/Font/HarmonyOS_Sans.css" />
+    <link rel="stylesheet" href="fish_commentBox.css" />
+    <script src="//at.alicdn.com/t/c/font_4495398_isa7t84pmu8.js"></script>
+    <style>
+      .icon {
+        width: 1em;
+        height: 1em;
+        vertical-align: -0.15em;
+        fill: currentColor;
+        overflow: hidden;
+      }
+      body {
+        font-family: 'HarmonyOS_Sans_regular';
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <!-- @fish评论框 -->
+      <div class="fish_commentBox">
+        <!-- 上方输入区域 -->
+        <div class="commentTop clearfix">
+          <!-- 上方左侧头像 -->
+          <div class="commentTopL leftfix"></div>
+          <!-- 上方右侧输入区 -->
+          <div class="commentTopR leftfix" contenteditable="true">
+            <!-- 用div模拟textarea来 -->
+            <div class="commentInput" placeholder="这是一条友善的评论">
+ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss</textarea
+            >
+          </div>
+        </div>
+        <!-- 下方区域 -->
+        <div class="commentBottom clearfix">
+          <!-- 下方左侧表情图片区 -->
+          <div class="commentOthers clearfix leftfix">
+            <!-- 表情 -->
+            <div class="commentEmoji leftfix">
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-xiaolian"></use>
+              </svg>
+            </div>
+            <!-- 图片 -->
+            <div class="commentPic leftfix">
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-xingzhuang-tupian"></use>
+              </svg>
+            </div>
+          </div>
+          <!-- 下方右侧发布区 -->
+          <div class="commentPublish clearfix rightfix">
+            <!-- 字数统计 -->
+            <div class="commentTextCal leftfix">0/100</div>
+            <!-- 发布按钮 -->
+            <div class="commentPublishBtn leftfix">
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-fabu"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 交互脚本加载 -->
+      <script src="./fish_commentBox.js"></script>
+    </div>
+  </body>
+</html>

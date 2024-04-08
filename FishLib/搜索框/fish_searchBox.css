@@ -1,0 +1,122 @@
+/* #region 搜索框 */
+
+.fish_searchBox {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+/* 输入框 */
+.fish_searchBox form {
+  /* 盒子尺寸 */
+  height: 90px;
+  /* 内部表现 */
+  display: flex;
+  align-items: center;
+}
+
+.fish_searchBox .cartridge_case1 {
+  /* 盒子尺寸 */
+  width: 9px;
+  height: 90px;
+  /* 盒子表现 */
+  box-sizing: border-box;
+  display: inline-block;
+  border: 1px black solid;
+  border-top-left-radius: 4px 10px;
+  border-bottom-left-radius: 4px 10px;
+}
+
+.fish_searchBox .cartridge_case2 {
+  /* 盒子尺寸 */
+  width: 240px;
+  height: 72px;
+  /* 盒子表现 */
+  box-sizing: border-box;
+  border: 1px black solid;
+  border-left: 0;
+  border-radius: 0;
+  border-top-right-radius: 30px 10px;
+  border-bottom-right-radius: 30px 10px;
+}
+
+.fish_searchBox .cartridge_case3 {
+  /* 盒子尺寸 */
+  width: 54px;
+  height: 48px;
+  /* 盒子表现 */
+  display: inline-block;
+  box-sizing: border-box;
+  border: 1px black solid;
+  border-left: 0;
+}
+
+.fish_searchBox .warhead1 {
+  /* 盒子尺寸 */
+  height: 44px;
+  width: 138px;
+  /* 盒子表现 */
+  background-color: white;
+  box-sizing: border-box;
+  border: 1px black solid;
+  border-left: 0;
+  border-top-right-radius: 110px 18px;
+  border-bottom-right-radius: 110px 18px;
+}
+
+/* 输入框 */
+.fish_searchBox input {
+  /* 内部表现 */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-left: 20px;
+  font-size: 20px;
+}
+
+/* 提交按钮 */
+.fish_searchBox button {
+  /* 内部表现 */
+  padding-left: 20px;
+  font-size: 20px;
+  text-align: left;
+}
+
+/* 推荐列 */
+.fish_searchBox .recommendList {
+  /* 盒子尺寸 */
+  width: 250px;
+  /* 盒子表现 */
+  display: none;
+  /* 内部表现 */
+}
+
+/* .fish_searchBox form input:focus.fish_searchBox .recommendList {
+  display: block;
+} */
+
+/* js中classList添加show类应该是在该css中找对应的选择器 */
+/* 此处show类不加.fish_searchBox 会使该选择器优先程度小于.fish_searchBox .recommendList */
+/* 从而导致display冲突的情况下show的display不能覆盖 */
+/* 为show类添加后缀，使不同show类有更好区分 */
+.fish_searchBox .showRecommendList {
+  display: block;
+}
+
+/* 推荐项 */
+.fish_searchBox .recommendList li {
+  /* 盒子尺寸 */
+  width: 230px;
+  margin-left: 10px;
+  margin-right: 10px;
+  /* 盒子表现 */
+  display: block;
+  box-sizing: border-box;
+  border: 1px dotted black;
+  /* 内部表现 */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 16px;
+}
+.fish_searchBox .recommendList li:hover {
+  background-color: rgb(197, 195, 195);
+}
+/* #endregion 搜索框 */
