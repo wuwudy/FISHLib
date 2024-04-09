@@ -3,7 +3,6 @@
   // 功能一：输入框获取焦点，输入框变大，下方列显现并且下方显示输入数字
   const inputTextarea = document.querySelector('.commentInput')
   const textMountShow = document.querySelector('.commentTextCal')
-  const inputTextareaBorder = document.querySelector('.commentTopR')
   const computedStyle = getComputedStyle(inputTextarea)
   const maxHeight = parseInt(computedStyle.getPropertyValue('max-height'))
   console.log(1)
@@ -17,7 +16,10 @@
       console.log('大了')
       e.target.style.overflowY = 'scroll'
     }
+    //显示当前输入字数
     let textMount = e.target.innerHTML.length
+    if (textMount >= 100) textMountShow.classList.add('InputLengthWarn')
+    else textMountShow.classList.remove('InputLengthWarn')
     textMountShow.innerHTML = `${textMount}/100`
   })
 })()
