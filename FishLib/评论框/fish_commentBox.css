@@ -40,6 +40,7 @@
   /* 盒子尺寸 */
   width: 380px;
   min-height: 50px;
+  max-height: 162px;
   /* 盒子表现 */
   margin: 10px auto;
   border: 0;
