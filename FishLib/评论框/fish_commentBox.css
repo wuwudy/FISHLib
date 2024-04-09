@@ -40,9 +40,9 @@
   /* 盒子尺寸 */
   width: 380px;
   min-height: 50px;
-  max-height: 80px;
+  max-height: 161px;
   /* 盒子表现 */
-  background-color: skyblue;
+  /* background-color: skyblue; */
   display: block;
   margin: 10px auto;
   border: 0;
